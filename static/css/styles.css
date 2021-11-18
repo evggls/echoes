@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "EVE";
+    src: url("../fonts/evealpha_bold.ttf") format("ttf");
+    font-weight: bold;
+    font-size: 18px;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    background-color: inherit;
+
+
+}
+
+body{
+    height: 100vh;
+    background-color: #192230;
+    color: #fff;
+    width: 100%;
+    font-family: "EVE", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+input, button, input:focus {
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.visuallyHidden {
+    width: 1px;
+    height: 1px;
+
+    clip: rect(0 0 0 0);
+    position: absolute;
+    transition: .3s all ease;
+}
+
+.pageHeader {
+    margin-top: 6px;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pageMain .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.output{
+    flex-grow: 1;
+}
+
+.aside {
+
+}
+
+.dropdownTitleButton{
+    text-align: left;
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.dropdownTitleButton .arrowIcon {
+    margin-left: 20px;
+}
+
+.arrowIcon{
+    transform: rotate(-90deg);
+    transition: .05s all ease;
+}
+
+.rotateZ90 {
+    transform: rotateZ(0deg);
+}
+
+.shipsList {
+    margin-top: 20px;
+
+    list-style: none;
+    text-align: left;
+}
+
+.outputList{
+    margin-top: 20px;
+    transition: .30s all ease;
+    list-style: none;
+}
+.outputItem {
+    margin: 6px 0;
+    padding: 6px;
+
+}
+
+.outputItem:hover {
+    background-color: rgba(65, 72, 105, 1);
+    transition: .3s all ease;
+}

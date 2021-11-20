@@ -62,11 +62,27 @@ input, button, input:focus {
     justify-content: space-between;
     height: 100%;
 }
+
+.sideBar {
+    padding: 10px;
+}
+
+.input *{
+    margin-top: 10px;
+    display: block;
+    width: 100% ;
+}
+
+.input:first-child{
+    margin: 0;
+}
+
 .output{
     flex-grow: 1;
 }
 
 .aside {
+    position: sticky;
 
 }
 
@@ -108,7 +124,14 @@ input, button, input:focus {
 .outputItem {
     margin: 6px 0;
     padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.outputItem div {
+    min-width: 220px;
+    max-width: 220px;
 }
 
 .outputItem:hover {
